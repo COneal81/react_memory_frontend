@@ -20,5 +20,11 @@
     d. in terminal, git add .
     e. in terminal, git commit -m'Inital setup'
     f. in terminal, choose 2nd option on github, 2nd line (git push -u origin master) Connect your API to your frontend!
-4. You want to start building with React and Redux.  Otherwise you will have to go back and make changes.
+4. Bootstrap
+    a. npm install react-bootstrap bootstrap
+    b. Documentation: https://react-bootstrap.github.io/getting-started/introduction/
+        1. Follow examples https://github.com/react-bootstrap/code-sandbox-examples/blob/master/README.md
+5. You want to start building with React and Redux.  Otherwise you will have to go back and make changes.
     a. Redux
+
+6. Cleanup Index.htm.  Remover icon, rename title
