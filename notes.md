@@ -24,7 +24,16 @@
     a. npm install react-bootstrap bootstrap
     b. Documentation: https://react-bootstrap.github.io/getting-started/introduction/
         1. Follow examples https://github.com/react-bootstrap/code-sandbox-examples/blob/master/README.md
-5. You want to start building with React and Redux.  Otherwise you will have to go back and make changes.
-    a. Redux
 
-6. Cleanup Index.htm.  Remover icon, rename title
+
+5. Cleanup Index.htm.  Remover icon, rename title
+
+6. You want to start building with React and Redux.  Otherwise you will have to go back and make changes.
+    a. Redux, If not already installed (you will know this by how your server is acting), install Redux
+        1. npm install react-redux
+           npm install --save-dev redux-devtools
+           npm install --save redux-thunk
+        2. in index.js
+            a. import { Provider } from 'react-redux'
+            b. import { createStore } from 'redux'
+            c. 
