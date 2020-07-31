@@ -30,10 +30,25 @@
 
 6. You want to start building with React and Redux.  Otherwise you will have to go back and make changes.
     a. Redux, If not already installed (you will know this by how your server is acting), install Redux
-        1. npm install react-redux
+        1. yarn add redux
+           npm install react-redux
            npm install --save-dev redux-devtools
            npm install --save redux-thunk
         2. in index.js
             a. import { Provider } from 'react-redux'
-            b. import { createStore } from 'redux'
-            c. 
+               import store from './store.js'
+            b. <Provider store={store}>
+                <App />
+                </Provider>,
+        3.  in store.js
+            a. import { createStore, applyMiddleware, compose, combineReducers } from 'redux'
+            b. import thunk from 'redux-thunk'
+            c. import usersReducer from './reducers/manageUsers.js'
+
+            d. const reducer = combineReducers({
+                users: usersReducer
+                 })
+            e. const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
+            f. const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)))
+            g. export default store -->
+           
