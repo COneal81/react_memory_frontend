@@ -54,5 +54,7 @@
     7. Start building reducer out.  If it is a login/logout add, start with auth.
         a. Create a currentUser reducer
             1. SET_CURRENT_USER
-            2. import reducer into store
+            2. import reducer into store and call it in combineReducers
+            3. Good saying:  Create a reducer, store it, and then create an action to get to it.
+
            
