@@ -14,6 +14,7 @@ export const fetchUser = (userInfo) => {
         })
         .then((response) => response.json())
         .then((data) => {
+            console.log(data)
             if (data.error) {
         } else {
             localStorage.setItem("token", data.jwt);
@@ -26,7 +27,7 @@ export const fetchUser = (userInfo) => {
 
 export const signUpUser = (userInfo) => {
     return (dispatch) => {
-        return fetch("http://localhost:3000//api/v1/users" , {
+        return fetch("http://localhost:3000/api/v1/users" , {
             method: "POST", 
             headers: {
                 "Content-Type": "application/json",
@@ -36,6 +37,7 @@ export const signUpUser = (userInfo) => {
           })
             .then((res) => res.json())
             .then((data) => {
+                console.log(data)
               if (data.error) {
                 return console.log(data.error);
               } else {
