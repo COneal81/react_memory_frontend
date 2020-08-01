@@ -7,7 +7,6 @@ class Logout extends Component {
     onClick = (event) => {
         event.preventDefault();
         this.props.logUserOut();
-        this.props.history.push("/")
     };
 
     render() {
