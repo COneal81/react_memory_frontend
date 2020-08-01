@@ -50,5 +50,11 @@
                  })
             e. const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
             f. const store = createStore(reducer, composeEnhancers(applyMiddleware(thunk)))
-            g. export default store -->
+            g. export default store 
+    7. Start building reducer out.  If it is a login/logout add, start with auth.
+        a. Create a currentUser reducer
+            1. SET_CURRENT_USER
+            2. import reducer into store and call it in combineReducers
+            3. Good saying:  Create a reducer, store it, and then create an action to get to it.
+
            

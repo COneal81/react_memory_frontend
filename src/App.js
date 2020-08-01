@@ -5,6 +5,9 @@ import Jumbotron from 'react-bootstrap/Jumbotron';
 import Container from 'react-bootstrap/Container';
 // import Button from 'react-bootstrap/Button';
 import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
+import Login from './components/Login.js'
+import Signup from './components/Signup.js'
+import Logout from './components/Logout.js'
 
 
 import './App.css';
@@ -17,7 +20,10 @@ class App extends React.Component{
       <Container className="p-3">
       <Jumbotron>
         <h1 className="header">Reactivate Memories</h1>
-        <h2>
+        < Login />
+        < Signup />
+        < Logout />
+        <h2> 
           {/* Current Page is{' '}
           <Switch>
             <Route path="/about">
