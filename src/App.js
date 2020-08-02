@@ -8,6 +8,7 @@ import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import Login from './components/Login.js'
 import Signup from './components/Signup.js'
 import Logout from './components/Logout.js'
+import MemoriesContainer from './containers/MemoriesContainer'
 
 
 import './App.css';
@@ -23,6 +24,7 @@ class App extends React.Component{
         < Login />
         < Signup />
         < Logout />
+        < MemoriesContainer />
         <h2> 
           {/* Current Page is{' '}
           <Switch>
