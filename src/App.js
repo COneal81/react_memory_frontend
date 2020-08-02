@@ -24,7 +24,8 @@ class App extends React.Component{
         < Login />
         < Signup />
         < Logout />
-        < MemoriesContainer />
+        {/* < MemoriesContainer /> */}
+
         <h2> 
           {/* Current Page is{' '}
           <Switch>
@@ -54,6 +55,7 @@ class App extends React.Component{
           </ButtonToolbar>
         </h2>
       </Jumbotron>
+      
     </Container>
       
     );

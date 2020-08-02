@@ -4,7 +4,7 @@ export const logUserOut = () => ({ type: "LOG_OUT" });
 
 export const fetchUser = (userInfo) => {
     return (dispatch) => {
-        return fetch("http://localhost:3000/api/v1/login", {
+        return fetch(`http://localhost:3000/api/v1/login`, {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -27,7 +27,7 @@ export const fetchUser = (userInfo) => {
 
 export const signUpUser = (userInfo) => {
     return (dispatch) => {
-        return fetch("http://localhost:3000/api/v1/users" , {
+        return fetch(`http://localhost:3000/api/v1/users` , {
             method: "POST", 
             headers: {
                 "Content-Type": "application/json",
@@ -51,7 +51,7 @@ export const signUpUser = (userInfo) => {
       export const fetchProfile = () => {
         const token = localStorage.getItem("token");
         return (dispatch) => {
-          return fetch("http://localhost:3000/profile/", {
+          return fetch(`http://localhost:3000/profile/`, {
             method: "GET",
             headers: {
               "Content-Type": "application/json",
