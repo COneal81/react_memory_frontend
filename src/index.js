@@ -12,6 +12,7 @@ import store from './store.js'
 ReactDOM.render(
   
   <Provider store={store}>
+    
     <App />
   </Provider>,
  
