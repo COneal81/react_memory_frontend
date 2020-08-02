@@ -7,7 +7,7 @@ export default function categoryReducer(state = {categories: []}, action) {
             return {...state, categories: [...state.categories, action.payload]}
 
         case "ADD_MEMORY":
-            let categories = state.categories.map(categories => {
+            let categories = state.categories.map(category => {
                 if (category.id === action.payload.id) {
                     return action.payload
                 } else {
@@ -15,7 +15,7 @@ export default function categoryReducer(state = {categories: []}, action) {
                 }
             })
             return {...state, categories: categories }
-            
+
         case "REMOVE_MEMORY":
             let categoriesRemove = state.categories.map(category => {
                 if (category.id === action.payload.id) {

@@ -5,7 +5,8 @@ import { addMemory } from '../actions/addMemory'
 // connect enables us to use the dispatch action that is sent to a reducer when create memory is called
 
 
-class MemoryForm extends React.Component{
+class MemoryForm extends React.Component {
+    
     state = {
         title: '',
         description:'',

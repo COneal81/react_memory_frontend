@@ -24,7 +24,7 @@ class App extends React.Component{
         < Login />
         < Signup />
         < Logout />
-        {/* < MemoriesContainer /> */}
+        < MemoriesContainer />
 
         <h2> 
           {/* Current Page is{' '}
