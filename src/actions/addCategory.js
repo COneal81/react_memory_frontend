@@ -1,15 +1,15 @@
-export const addCategory = (dataInfo) => {
-
+export const addCategory = (data) => {
+    console.log(data)
     return (dispatch) => {
         
-        fetch('http://localhost:3001/api/v1/categories', {
+        fetch('http://localhost:3000/api/v1/categories', {
             headers: {
                 'Content-Type': 'application/json',
                 'Accept': 'application/json'
             },
             method: 'POST',
             // dataInfo is being changed from an object to a string.
-            body: JSON.stringify(dataInfo)
+            body: JSON.stringify(data)
         }) 
          // changing dataInfo back into json
         .then(response => response.json())
