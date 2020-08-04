@@ -8,7 +8,8 @@ import ButtonToolbar from 'react-bootstrap/ButtonToolbar';
 import Login from './components/Login.js'
 import Signup from './components/Signup.js'
 import Logout from './components/Logout.js'
-import MemoriesContainer from './containers/MemoriesContainer'
+import CategoriesContainer from './containers/CategoriesContainer'
+import { NavigationBar } from './components/NavigationBar'
 
 
 import './App.css';
@@ -21,10 +22,12 @@ class App extends React.Component{
       <Container className="p-3">
       <Jumbotron>
         <h1 className="header">Reactivate Memories</h1>
-        < Login />
-        < Signup />
-        < Logout />
-        < MemoriesContainer />
+        
+        {/* < Login /> <br></br>
+        < Signup /><br></br>
+        < Logout /><br></br> */}
+        < NavigationBar />
+        < CategoriesContainer />
 
         <h2> 
           {/* Current Page is{' '}
@@ -41,7 +44,7 @@ class App extends React.Component{
           </Switch> */}
         </h2>
         <h2>
-          Navigate to{' '}
+          
           <ButtonToolbar className="custom-btn-toolbar">
             {/* <LinkContainer to="/">
               <Button>Home</Button>
